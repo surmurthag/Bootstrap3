@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Les infobulles</title>
+
+    <link href="http://www.cabyan.com/bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+	<script src="http://www.cabyan.com/bootstrap/js/jquery.js"></script>
+    <script src="http://www.cabyan.com/bootstrap/js/bootstrap.min.js"></script>
+	
+	    <style>
+	body {padding-top:50px;}
+
+	
+	</style>
+  </head>
+
+  <body>
+
+   <div class="container">
+	  
+<p>Denique Antiochensis ordinis <a href="#" id="popover-html" class="popover-test" data-placement="bottom" data-toggle="popover" role="button" >vertices sub</a> uno elogio iussit occidi ideo efferatus.</p>
+
+		
+ <script>
+ $(document).ready(function(){
+
+$('#popover-html').popover({
+ html    : true,
+ content : '<p><img src="http://www.editions-eni.fr/styles/france/images/logo_ENI.png" class="pull-left"/>Denique Antiochensis ordinis vertices sub uno elogio iussit occidi ideo efferatus.</p><p> Denique Antiochensis ordinis vertices sub uno elogio iussit occidi ideo efferatus.</p><p><a href="http://www.editions-eni.fr" class="btn btn-primary">Site Web</a></p>',
+ title   : '<p>Popover en <strong>HTML!</strong></p>'
+ }); 
+ 
+$('a.popover-test').mouseover(function(){
+	$(this).popover('show');
+});
+
+ });
+ 
+ </script>
+
+</div>
+
+
+
+  </body>
+</html>

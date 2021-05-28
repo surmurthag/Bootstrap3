@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Typographie</title>
+
+	<link href="http://www.cabyan.com/bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+	<script src="http://www.cabyan.com/bootstrap/js/jquery.js"></script>
+    <script src="http://www.cabyan.com/bootstrap/js/bootstrap.min.js"></script>
+
+    <style>
+	body {padding-top:50px;}
+	.container {}
+	
+	</style>
+  </head>
+
+  <body>
+
+    <div class="container">
+	  
+		<div class="alert alert-dismissable alert-success">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+
+			<p><strong>Bravo!</strong> L'action a été exécutée avec succès! <a href="http://www.google.fr">Visitez Google pour plus d'information</a></p>
+
+			<p><button id="myButton" type="button" class="btn btn-primary">Fermer ce bandeau</button></p>
+			
+		</div>
+		
+           <script>
+			$('#myButton').click(function(){
+				$('.alert').alert('close');
+			});
+		</script>
+    </div>		  
+    </div>
+
+
+						
+
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Les infobulles</title>
+
+    <link href="http://www.cabyan.com/bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+	<script src="http://www.cabyan.com/bootstrap/js/jquery.js"></script>
+    <script src="http://www.cabyan.com/bootstrap/js/bootstrap.min.js"></script>
+	
+	    <style>
+	body {padding-top:50px;}
+
+	
+	</style>
+  </head>
+
+  <body>
+
+   <div class="container">
+	  
+<p>Denique Antiochensis ordinis <a href="#" class="popover-test" data-toggle="popover" data-content="Contenu de notre popover." role="button" data-original-title="Titre">vertices sub</a> uno elogio iussit occidi ideo efferatus.</p>
+		
+ 
+		
+<script>
+$(document).ready(function(){
+ 
+$('a.popover-test').mouseover(function(){
+	$(this).popover('show');
+});
+ });
+</script>
+ 
+ 
+</div>
+
+
+
+  </body>
+</html>

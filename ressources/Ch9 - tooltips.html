@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Les infobulles</title>
+
+    <link href="http://www.cabyan.com/bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+	<script src="http://www.cabyan.com/bootstrap/js/jquery.js"></script>
+    <script src="http://www.cabyan.com/bootstrap/js/bootstrap.min.js"></script>
+	
+	    <style>
+	body {padding-top:50px;}
+
+	
+	</style>
+  </head>
+
+  <body>
+
+    <div class="container">
+	  
+	<p>Denique Antiochensis ordinis 
+<a href="#" class="tooltip-test" data-toggle="tooltip" title="Ceci est une infobulle!">vertices sub</a>
+uno elogio iussit occidi ideo efferatus, quod ei celebrari vilitatem intempestivam urgenti, cum inpenderet inopia, gravius rationabili responderunt; et perissent ad unum ni comes orientis tunc Honoratus fixa constantia 
+<a href="#" class="tooltip-test" data-toggle="tooltip" title="Une autre infobulle.">restitisset</a>.
+Denique Antiochensis ordinis vertices sub uno elogio iussit occidi 
+<a href="#" class="tooltip-test" data-toggle="tooltip" title="Et une troisième infobulle!">ideo efferatus</a>
+, quod ei celebrari vilitatem intempestivam urgenti, cum inpenderet inopia, gravius rationabili responderunt; et perissent ad unum ni comes orientis tunc Honoratus fixa constantia restitisset.
+		</p>
+ <script>
+ $(document).ready(function(){
+ $('a.tooltip-test').mouseover(function(){ 
+ $(this).tooltip('show');
+ });
+ });
+ </script>
+ 
+ 
+    </div>
+
+
+  </body>
+</html>

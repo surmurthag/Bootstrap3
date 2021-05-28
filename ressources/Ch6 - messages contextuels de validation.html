@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Les formulaires</title>
+
+    <link href="http://www.cabyan.com/bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+	<script src="http://www.cabyan.com/bootstrap/js/jquery.js"></script>
+    <script src="http://www.cabyan.com/bootstrap/js/bootstrap.min.js"></script>
+	
+	<style>
+	body {padding-top:50px;}
+	.container {}
+	
+	
+	</style>
+  </head>
+
+  <body>
+
+    <div class="container">
+<div class="form-group" id="form-group-id">
+    <label for="exampleInputPassword1">Mot de Passe</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" required placeholder="Mot de Passe">
+	<span class="help-block" id="valid-msg"><strong>Le mot de passe doit comporter au moins 6 caractères.</strong></span>
+  </div>
+  <script>
+  $('#exampleInputPassword1').keyup(function(){
+		inputValue = $('#exampleInputPassword1').val();
+		longueurStr = inputValue.length;
+		if(longueurStr < 6)
+		{
+			$('#form-group-id').removeClass().addClass('form-group has-error');
+			$('#valid-msg').html('<strong>Le mot de passe doit comporter au moins 6 caractères.</strong>');
+		}
+		if(longueurStr >= 6 && longueurStr < 10)
+		{
+			$('#form-group-id').removeClass().addClass('form-group has-warning');
+			$('#valid-msg').html('<strong>Sécurité moyenne</strong>');
+		}
+		if(longueurStr >= 10)
+		{
+			$('#form-group-id').removeClass().addClass('form-group has-success');
+			$('#valid-msg').html('<strong>Sécurité forte</strong>');
+		}
+	
+  });
+  </script> 
+
+    </div>
+
+  </body>
+</html>

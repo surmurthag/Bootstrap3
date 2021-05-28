@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Les formulaires</title>
+
+    <link href="http://www.cabyan.com/bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+	<script src="http://www.cabyan.com/bootstrap/js/jquery.js"></script>
+    <script src="http://www.cabyan.com/bootstrap/js/bootstrap.min.js"></script>
+	
+	<style>
+	body {padding-top:50px;}
+	.container {}
+	
+	
+	</style>
+  </head>
+
+  <body>
+
+    <div class="container">
+	  
+<form role="form" class="form-vertical">
+	
+  <div class="form-group">
+    <label for="exampleInputEmail1">Adresse email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Adresse email" >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Mot de passe</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputText1">Texte</label>
+    <input type="text" class="form-control" id="exampleInputText1" placeholder="Texte">
+  </div>
+  <button type="submit" class="btn btn-primary">Connexion</button>
+
+	</form>
+
+	
+		<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-4">
+	
+	<form role="form" class="form-vertical">
+  
+  <div class="form-group">
+    <label for="InputTitle">Votre Titre</label>	
+    <input type="text" class="form-control" id="InputTitle" placeholder="Votre titre" >	
+  </div>
+  
+  <div class="form-group">
+    <label class="sr-only" for="InputText">Votre texte</label>
+	<textarea class="form-control" id="InputText" placeholder="Votre texte ici..."></textarea>
+  </div>
+  
+	</form>
+	
+	</div>
+	
+	</div>
+	
+	
+	<div class="checkbox">
+  <label>
+    <input type="checkbox" name="checkbox" id="checkbox" value="">
+    Label de notre checkbox
+  </label>
+</div>
+
+
+<div class="radio">
+  <label>
+    <input type="radio" name="radioList" id="radio1" value="1" checked>
+    Option 1 (par défaut)
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="radioList" id="radio2" value="2">
+    Option 2
+  </label>
+</div>
+
+
+<div class="checkbox-inline">
+  <label>
+    <input type="checkbox" name="checkbox" id="checkbox" value="">
+    Checkbox 1
+  </label>
+</div>
+<div class="checkbox-inline">
+  <label>
+    <input type="checkbox" name="checkbox" id="checkbox" value="">
+    Checkbox 2
+  </label>
+</div>
+<br>
+
+<div class="radio-inline">
+  <label>
+    <input type="radio" name="radioList" id="radio1" value="1" checked>
+    Option 1 (par défaut)
+  </label>
+</div>
+<div class="radio-inline">
+  <label>
+    <input type="radio" name="radioList" id="radio2" value="2">
+    Option 2
+  </label>
+</div>
+
+
+	<div class="form-group">
+	
+    <label for="selectList">Liste déroulante :</label>
+	
+	<div class="row">
+		<div class="col-sm-6">
+			<select name="selectList" id="selectList" class="form-control">
+				<option value="1">Choix 1</option>
+				<option value="1">Choix 2</option>
+				<option value="1">Choix 3</option>
+			</select>
+		</div>
+	</div>
+	
+	</div>
+
+
+	
+    </div>
+
+  </body>
+</html>
